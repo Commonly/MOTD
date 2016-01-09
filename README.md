@@ -1,2 +1,3 @@
 # MOTD
 https://www.spigotmc.org/resources/motd-comes-with-an-api-and-more.15032/
+Click that to see how to use the API in here!
