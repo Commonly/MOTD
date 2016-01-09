@@ -1,0 +1,11 @@
+ShowMessage: true
+WelcomeMessage: '&6&lExample welcome message'
+ShowTitle: true
+HeaderMessage: '&6&lExample header message'
+FooterMessage: '&6&lExample footer message'
+Prefix: '&e[MOTD] '
+ShowTab: true
+TabHeader: '&6&lHeader'
+TabFooter: '&6&lFooter'
+ShowActionbar: true
+ActionBarMsg: '&c&lWelcome to our server!'
