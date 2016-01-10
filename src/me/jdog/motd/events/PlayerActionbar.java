@@ -29,5 +29,7 @@ public class PlayerActionbar implements Listener {
 			return;
 		}
 		
+		// Old method needed an extra plugin, I didn't like it. So I created my own api. Enjoy! :3
+		
 	}
 }
