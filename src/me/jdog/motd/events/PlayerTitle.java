@@ -31,5 +31,7 @@ public class PlayerTitle implements Listener {
 			return;
 		}
 	}
+	
+	// Used to need an extra plugin but I found the source and added it. Enjoy! :3
 
 }
