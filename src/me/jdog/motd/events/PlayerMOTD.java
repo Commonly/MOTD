@@ -6,6 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import me.jdog.motd.api.MessageAPI;
 import me.jdog.motd.Custom;
 
 public class PlayerMOTD implements Listener {
@@ -23,7 +24,7 @@ public class PlayerMOTD implements Listener {
 		String welcomeMessage = ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("WelcomeMessage"));
 		
 		if (plugin.getConfig().getBoolean("ShowMessage")==true) {
-			p.sendMessage(welcomeMessage);
+			MessageAPI.sendMessage(welcomeMessage);
 		}
 		else {
 			return;
