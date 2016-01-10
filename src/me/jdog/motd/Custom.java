@@ -67,7 +67,7 @@ public class Custom extends JavaPlugin {
 		}
 		
 		if (args[0].equalsIgnoreCase("help")) {
-			p.sendMessage(ChatColor.RED+"MOTD vb2.2");
+			p.sendMessage(ChatColor.RED+"MOTD vb2.4");
 			p.sendMessage(ChatColor.RED+"Help>");
 			p.sendMessage(ChatColor.GREEN+"Go to MOTD > config.yml and there you can edit messages");
 			p.sendMessage(ChatColor.RED+"Don't forget to rate the plugin!");
@@ -86,12 +86,13 @@ public class Custom extends JavaPlugin {
 		}
 		
 		if (args[0].equalsIgnoreCase("enabled")) {
-			p.sendMessage(prefix+"motd version b2.3 enabled...");
+			p.sendMessage(prefix+"motd version b2.4 enabled...");
 			return true;
 		}
 		
 		if (args[0].equalsIgnoreCase("changelog")) {
 			p.sendMessage("changelog...");
+			MessageAPI.sendMessage("b2.4: api update");
 			p.sendMessage("b2.3: bugfix");
 			p.sendMessage("b2.2: removed the need for extra plugins, and new config options.");
 			p.sendMessage("b2.1: recoded most of plugin.");
@@ -99,7 +100,7 @@ public class Custom extends JavaPlugin {
 		}
 		
 		if (args[0].equalsIgnoreCase("version")) {
-			p.sendMessage(prefix+"b2.3");
+			p.sendMessage(prefix+"b2.4");
 			return true;
 		}
 		
