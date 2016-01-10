@@ -1,11 +1,8 @@
 main: me.jdog.motd.Custom
 name: MOTD
-version: b2.3
+version: b2.4
 author: Firee_
 description: Send a welcome message to players when they join.
-commands:
-  vote:
-    description: A vote command that lists all vote links.
   motd:
     description: MOTD main command, for all commands do /motd cmds
     permission: motd.motd
