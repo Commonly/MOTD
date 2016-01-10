@@ -11,6 +11,8 @@ public class MessageAPI extends JavaPlugin {
 		p.sendMessage(msg);
 	}
 	
+	// String testMsg = ChatColor.translateAlternateColorCodes('&', getConfig.getString("TestMsg");
+	// You can use color codes. Example: MessageAPI.sendMessage(testMsg);
 	// Example usage: MessageAPI.sendMessage("&c&lHi"+p.getName());
 
 }
