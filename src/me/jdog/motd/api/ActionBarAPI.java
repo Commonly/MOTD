@@ -11,6 +11,14 @@ import net.minecraft.server.v1_8_R3.PacketPlayOutChat;
 
 public class ActionBarAPI extends JavaPlugin {
 	
+	/**
+	 * 
+	 * @param p
+	 * 	The player who will receive the actionbar (example: Player p = event.getPlayer();
+	 * @param message
+	 * 	The Actionbar message the player will get.
+	 */
+	
 	public static void sendActionBar(Player p, String message){
 		IChatBaseComponent cbc = ChatSerializer.a("{\"text\": \"" + ChatColor.translateAlternateColorCodes('&', message+"\"}"));
         PacketPlayOutChat ppoc = new PacketPlayOutChat(cbc,(byte) 2);
