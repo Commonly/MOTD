@@ -9,9 +9,9 @@ public class MessageAPI extends JavaPlugin {
 	/**
 	 * 
 	 * @param p
-	 * 		The player it will be sent to (example: Player p = event.getPlayer();
+	 * 	The player it will be sent to (example: Player p = event.getPlayer();
 	 * @param msg
-	 * 		The message the player will receive.
+	 * 	The message the player will receive.
 	 */
 	
 	public static void sendMessage(Player p, String msg) {
