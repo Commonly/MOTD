@@ -6,13 +6,16 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class MessageAPI extends JavaPlugin {
 	
+	/**
+	 * 
+	 * @param p
+	 * 		The player it will be sent to (example: Player p = event.getPlayer();
+	 * @param msg
+	 * 		The message the player will receive.
+	 */
+	
 	public static void sendMessage(Player p, String msg) {
 		msg = ChatColor.translateAlternateColorCodes('&', msg);
 		p.sendMessage(msg);
 	}
-	
-	// String testMsg = ChatColor.translateAlternateColorCodes('&', getConfig.getString("TestMsg");
-	// You can use color codes. Example: MessageAPI.sendMessage(testMsg);
-	// Example usage: MessageAPI.sendMessage("&c&lHi"+p.getName());
-
 }
