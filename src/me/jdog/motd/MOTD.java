@@ -4,18 +4,19 @@ import java.util.logging.Logger;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.jdog.motd.api.MessageAPI;
 import me.jdog.motd.events.*;
-import net.md_5.bungee.api.ChatColor;
 
-public class Custom extends JavaPlugin {
+public class MOTD extends JavaPlugin {
 	
 	public void onEnable() {
+		
 		PluginDescriptionFile pdfFile = getDescription();
 		Logger logger = getLogger();
 		
@@ -75,7 +76,7 @@ public class Custom extends JavaPlugin {
 		}
 		
 		if (args[0].equalsIgnoreCase("spigot")) {
-			p.sendMessage(prefix+ChatColor.RED+"You got the plugin 'MOTD' from: https://www.spigotmc.org/resources/motd.15032/");
+			p.sendMessage(prefix+ChatColor.RED+"You got the plugin 'MOTD' from: https://www.spigotmc.org/resources/motd-comes-with-an-api-and-more.15032/");
 			return true;
 		}
 		
@@ -86,13 +87,14 @@ public class Custom extends JavaPlugin {
 		}
 		
 		if (args[0].equalsIgnoreCase("enabled")) {
-			p.sendMessage(prefix+"motd version b2.4 enabled...");
+			p.sendMessage(prefix+"motd version b2.5 enabled...");
 			return true;
 		}
 		
 		if (args[0].equalsIgnoreCase("changelog")) {
 			p.sendMessage("changelog...");
-			MessageAPI.sendMessage("b2.4: api update");
+			MessageAPI.sendMessage(p, "2.5: Edit the prefix from in game.");
+			MessageAPI.sendMessage(p, "b2.4: api update");
 			p.sendMessage("b2.3: bugfix");
 			p.sendMessage("b2.2: removed the need for extra plugins, and new config options.");
 			p.sendMessage("b2.1: recoded most of plugin.");
@@ -100,8 +102,22 @@ public class Custom extends JavaPlugin {
 		}
 		
 		if (args[0].equalsIgnoreCase("version")) {
-			p.sendMessage(prefix+"b2.4");
+			p.sendMessage(prefix+"b2.5");
 			return true;
+		}
+		
+		if (args[0].equalsIgnoreCase("prefix")) {
+			StringBuilder builder = new StringBuilder();
+			for(int i = 1; i < args.length; i++) {
+				builder.append(args[i]+" ");
+			}
+			
+			String msg = builder.toString();
+			this.getConfig().set("Prefix", msg);
+			this.saveConfig();
+			MessageAPI.sendMessage(p, "Set the new prefix to: "+msg);
+			return true;
+			
 		}
 		
 		else {
@@ -110,4 +126,5 @@ public class Custom extends JavaPlugin {
 		
 		return true;
 }
+	
 }	
