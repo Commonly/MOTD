@@ -8,13 +8,13 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import com.connorlinfoot.titleapi.TitleAPI;
 
-import me.jdog.motd.Custom;
+import me.jdog.motd.MOTD;
 
 public class PlayerTitle implements Listener {
 	
-	private Custom plugin;
+	private MOTD plugin;
 	
-	public PlayerTitle(Custom pl) {
+	public PlayerTitle(MOTD pl) {
 		plugin = pl;
 	}
 	
@@ -31,7 +31,5 @@ public class PlayerTitle implements Listener {
 			return;
 		}
 	}
-	
-	// Used to need an extra plugin but I found the source and added it. Enjoy! :3
 
 }
