@@ -6,14 +6,14 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
-import me.jdog.motd.Custom;
+import me.jdog.motd.MOTD;
 import me.jdog.motd.api.ActionBarAPI;
 
 public class PlayerActionbar implements Listener {
 	
-	private Custom plugin;
+	private MOTD plugin;
 	
-	public PlayerActionbar(Custom pl) {
+	public PlayerActionbar(MOTD pl) {
 		plugin = pl;
 	}
 	
@@ -28,8 +28,6 @@ public class PlayerActionbar implements Listener {
 		else {
 			return;
 		}
-		
-		// Old method needed an extra plugin, I didn't like it. So I created my own api. Enjoy! :3
 		
 	}
 }
