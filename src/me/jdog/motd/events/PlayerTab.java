@@ -8,13 +8,13 @@ import org.bukkit.event.player.PlayerJoinEvent;
 
 import com.connorlinfoot.titleapi.TitleAPI;
 
-import me.jdog.motd.Custom;
+import me.jdog.motd.MOTD;
 
 public class PlayerTab implements Listener {
 	
-	private Custom plugin;
+	private MOTD plugin;
 	
-	public PlayerTab(Custom pl) {
+	public PlayerTab(MOTD pl) {
 		plugin = pl;
 	}
 	
@@ -31,7 +31,5 @@ public class PlayerTab implements Listener {
 			return;
 		}
 	}
-	
-	// Use to need extra plugin, I found the source of it and put it in my project. Enjoy! :3
 
 }
