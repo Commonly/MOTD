@@ -1,0 +1,13 @@
+motd:
+  use: true
+  message: '&cWelcome to the server! %player%'
+title:
+  use: true
+  title-message: '&c&l%player%'
+  subtitle-message: '&cHave a nice day!'
+actionbar:
+  use: true
+  message: '&cWelcome to the server! %player%'
+join:
+  showplayerjoinmessage: true
+  playerjoinmessage: '&7[&b+&7] &a%player%'

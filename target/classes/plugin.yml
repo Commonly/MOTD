@@ -1,0 +1,7 @@
+name: MOTD
+version: 1.8
+main: me.jdog.motd.MOTD
+depend: [murAPI]
+authors: [Muricans]
+description: Recreating my old plugin 'MOTD' but for updated versions of Minecraft since it broke.
+website: https://commonly.github.io
